@@ -1467,3 +1467,124 @@ body {
   }
 
 }
+
+/* General Styling */
+.event-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Smooth ease */
+}
+
+/* Individual Section Backgrounds */
+#event-part-1 {
+  background-color: #f0f8ff; /* Light blue for Offline Program */
+}
+
+#event-part-2 {
+  background: linear-gradient(135deg, #eef2ff, #cbd4ff); /* Soft gradient for Virtual Program */
+}
+
+/* Styling for Event Sections */
+.event-section {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Navigation Buttons Styling */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Styling for Timeline Progress Indicator */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.event-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* Center the line */
+  width: 2px; /* Thickness of the vertical line */
+  background-color: #ddd; /* Color of the line */
+  transform: translateX(-50%);
+}
+
+/* Styling for each event card */
+.event-card {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.btn.btn-white {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.3s;
+}
+
+.btn.btn-white:hover {
+  background-color: #4caf50; /* Darker on hover */
+  color: white;
+}
+
+/* Center the event list */
+.event-list {
+  display: flex;
+  justify-content: center; /* Center-aligns the event card */
+  padding: 20px 0;
+}
+
+/* Additional styling for event-card to ensure it doesn't stretch */
+.event-card {
+  max-width: 600px; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the card within its container */
+  text-align: center; /* Centers text inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff; /* Optional: sets a background color */
+}
+
+
+/* bagian people say*/
+
+
