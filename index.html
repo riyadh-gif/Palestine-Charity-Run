@@ -128,7 +128,7 @@
           </h2>
 
           <p class="hero-text">
-           CharityRun is more than just a run; it’s a movement for humanity. This event unites us in compassion and support for those impacted by the tragedy in Palestine. Every step taken is a stand for peace, hope, and healing. Join us, not just to race, but to make a real difference for those in need. Together, let’s run with purpose and show that humanity cares.
+           CharityRun is more than just a run it’s a movement for humanity. This event unites us in compassion and support for those impacted by the tragedy in Palestine. Every step taken is a stand for peace, hope, and healing. Join us, not just to race, but to make a real difference for those in need. Together, let’s run with purpose and show that humanity cares.
           </p>
 
           <button class="btn btn-primary">
@@ -183,7 +183,7 @@
 
             <li class="features-item">
               <div class="item-icon">
-                <ion-icon name="leaf-outline"></ion-icon>
+                <ion-icon name="medkit-outline"></ion-icon>
               </div>
 
               <div>
@@ -197,7 +197,7 @@
 
             <li class="features-item">
               <div class="item-icon">
-                <ion-icon name="snow-outline"></ion-icon>
+                <ion-icon name="leaf-outline"></ion-icon>
               </div>
 
               <div>
@@ -257,76 +257,91 @@
 
             <p class="section-subtitle">
               <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
-
               <span>Why Choose Us</span>
             </p>
-
+          
             <h2 class="h2 section-title">
-              Step Forward for <strong> Hope and Humanity</strong>
+              Step Forward for <strong>Hope and Humanity</strong>
             </h2>
-
+          
             <ul class="tab-nav">
-
               <li>
-                <button class="tab-btn active">Our Mission</button>
+                <button class="tab-btn active" onclick="showTabContent('mission')">Our Mission</button>
               </li>
-
               <li>
-                <button class="tab-btn">Our Vision</button>
+                <button class="tab-btn" onclick="showTabContent('vision')">Our Vision</button>
               </li>
-              
             </ul>
-
-            <div class="tab-content">
-
+          
+            <div id="mission" class="tab-content active">
               <p class="section-text">
                 Our mission is to bring relief, support, and hope to those affected by the tragedy in Palestine. Through collective compassion and active efforts, we aim to provide essential resources, build resilient communities, and stand together in solidarity for a brighter future. This is more than a race—it’s a step towards restoring lives and empowering change.
               </p>
-
               <ul class="tab-list">
-
                 <li class="tab-item">
                   <div class="item-icon">
                     <ion-icon name="checkmark-circle"></ion-icon>
                   </div>
-
                   <p class="tab-text">Emergency Food Aid</p>
                 </li>
-
                 <li class="tab-item">
                   <div class="item-icon">
                     <ion-icon name="checkmark-circle"></ion-icon>
                   </div>
-
                   <p class="tab-text">Access to Clean Water</p>
                 </li>
-
                 <li class="tab-item">
                   <div class="item-icon">
                     <ion-icon name="checkmark-circle"></ion-icon>
                   </div>
-
                   <p class="tab-text">Medical Assistance</p>
                 </li>
-
                 <li class="tab-item">
                   <div class="item-icon">
                     <ion-icon name="checkmark-circle"></ion-icon>
                   </div>
-
                   <p class="tab-text">Education Support</p>
                 </li>
-
               </ul>
-
-              <button class="btn btn-secondary">
-                <span>Learn More Us</span>
-
-                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-              </button>
-
             </div>
-
+          
+            <div id="vision" class="tab-content" style="display: none;">
+              <p class="section-text">
+                Our vision is a world where humanity comes together in times of crisis, fostering peace and resilience in communities affected by conflict. We strive to build a future where individuals have the resources, safety, and hope needed to thrive, united by compassion and support.
+              </p>
+              <ul class="tab-list">
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Global Solidarity</p>
+                </li>
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Community Resilience</p>
+                </li>
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Sustainable Growth</p>
+                </li>
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Empowered Futures</p>
+                </li>
+              </ul>
+            </div>
+          
+            <button class="btn btn-secondary">
+              <span>Learn More Us</span>
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            </button>
+          
           </div>
 
         </div>
@@ -338,107 +353,93 @@
 
       
       <!-- #TREK RUNNING -->
-<section class="section service" id="service" style="background-image: url('./assets/images/service-map.png'); padding-top: 50px; position: relative;">
-  <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <section class="section service" id="service" style="background-image: url('./assets/images/service-map.png'); padding-top: 50px; position: relative;">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
 
-    <p class="section-subtitle">
-      <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
-      <span>Choose Your Track</span>
-    </p>
-
-    <h2 class="h2 section-title">
-      Choose Your Path To <strong>Support  Gaza</strong>
-    </h2>
-
-    <!-- Centered service list with gap between cards -->
-    <ul class="service-list" style="display: flex; justify-content: center; gap: 20px; width: 80%; max-width: 1200px; padding: 0; margin-top: 20px;">
-
-      <!-- Service Card 1 -->
-      <li style="flex: 1; max-width: 300px;">
-        <div class="service-card" style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-
-          <div class="card-icon" style="font-size: 3rem; color: green; transition: font-size 0.3s ease;">
-            <ion-icon name="walk-outline"></ion-icon>
-          </div>
-
-          <h3 class="h3 card-title">3.6 KM</h3>
-
-          <p class="card-text">
-            A short but meaningful run for beginner.
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+            <span>Choose Your Track</span>
           </p>
 
-          <a href="https://ikutaja.id/events/charity-run-for-palestine-3-6-km" target="_blank" class="btn-link" style="display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: #333; transition: color 0.3s ease;">
-            <span>Register</span>
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
+          <h2 class="h2 section-title">
+            Choose Your Path To <strong>Support Gaza</strong>
+          </h2>
+
+          <!-- Centered service list with gap between cards -->
+          <ul class="service-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; width: 100%; max-width: 1200px; padding: 0; margin-top: 20px;">
+
+            <!-- Service Card 1 -->
+            <li style="max-width: 100%;">
+              <div class="service-card" style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+
+                <div class="card-icon" style="font-size: 3rem; color: green; transition: font-size 0.3s ease;">
+                  <ion-icon name="walk-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">3.6 KM</h3>
+
+                <p class="card-text">
+                  A short but meaningful run for beginner.
+                </p>
+
+                <a href="https://ikutaja.id/events/charity-run-for-palestine-3-6-km" target="_blank" class="btn-link" style="display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: #333; transition: color 0.3s ease;">
+                  <span>Register</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <!-- Service Card 2 -->
+            <li style="max-width: 100%;">
+              <div class="service-card" style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+
+                <div class="card-icon" style="font-size: 3rem; color: green; transition: font-size 0.3s ease;">
+                  <ion-icon name="map-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">7.0 KM</h3>
+
+                <p class="card-text">
+                  Challenge yourself with a longer distance.
+                </p>
+
+                <a href="https://ikutaja.id/events/charity-run-for-palestine-7-0-km" target="_blank" class="btn-link" style="display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: #333; transition: color 0.3s ease;">
+                  <span>Register</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <!-- Service Card 3 -->
+            <li style="max-width: 100%;">
+              <div class="service-card" style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+
+                <div class="card-icon" style="font-size: 3rem; color: green; transition: font-size 0.3s ease;">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Virtual</h3>
+
+                <p class="card-text">
+                  Run from anywhere, anytime, anywhere.
+                </p>
+
+                <a href="https://ikutaja.id/events/charity-run-for-palestine-virtual" target="_blank" class="btn-link" style="display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: #333; transition: color 0.3s ease;">
+                  <span>Register</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
 
         </div>
-      </li>
+      </section>
 
-      <!-- Service Card 2 -->
-      <li style="flex: 1; max-width: 300px;">
-        <div class="service-card" style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
 
-          <div class="card-icon" style="font-size: 3rem; color: green; transition: font-size 0.3s ease;">
-            <ion-icon name="map-outline"></ion-icon>
-          </div>
-
-          <h3 class="h3 card-title">7.0 KM</h3>
-
-          <p class="card-text">
-            Challenge yourself with a longer distance.
-          </p>
-
-          <a href="https://ikutaja.id/events/charity-run-for-palestine-7-0-km" target="_blank" class="btn-link" style="display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: #333; transition: color 0.3s ease;">
-            <span>Register</span>
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
-
-        </div>
-      </li>
-
-      <!-- Service Card 3 -->
-      <li style="flex: 1; max-width: 300px;">
-        <div class="service-card" style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-
-          <div class="card-icon" style="font-size: 3rem; color: green; transition: font-size 0.3s ease;">
-            <ion-icon name="phone-portrait-outline"></ion-icon>
-          </div>
-
-          <h3 class="h3 card-title">Virtual</h3>
-
-          <p class="card-text">
-            Run from anywhere, anytime, anywhere.
-          </p>
-
-          <a href="https://ikutaja.id/events/charity-run-for-palestine-virtual" target="_blank" class="btn-link" style="display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: #333; transition: color 0.3s ease;">
-            <span>Register</span>
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
-
-        </div>
-      </li>
-
-    </ul>
-
-  </div>
-</section>
-
-<!-- Inline CSS for hover effect on cards -->
-<style>
-  .service-card:hover {
-    transform: scale(1.05); /* Slightly scale up the card */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
-  }
-
-  .card-icon {
-    font-size: 3rem; /* Large icon size */
-  }
-  
-  .service-card:hover .btn-link {
-    color: #006400; /* Darker color on hover */
-  }
-</style>
 
      <!-- 
         - #PEOPLE SAY
@@ -495,22 +496,61 @@
       -->
 
       <section class="section partner">
-        <div class="container">
-
-            
-
-          
-          <!-- <a href="#" class="partner-logo">
-            <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization"
-              class="gray">
-
-            <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy"
-              alt="Poor Fund Organization" class="color">
-          </a>
-        -->
-
+        <div class="container" style="overflow: hidden;">
+          <div class="partner-slider-wrapper" style="display: flex; overflow: hidden;">
+            <div class="partner-slider" style="display: flex; gap: 20px;">
+      
+              <!-- Duplicate the logos to create a seamless looping effect -->
+              <div class="partner-slide-group">
+                <a href="#" class="partner-logo">
+                  <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="gray">
+                  <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="color">
+                </a>
+      
+                <a href="#" class="partner-logo">
+                  <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="gray">
+                  <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="color">
+                </a>
+      
+                <a href="#" class="partner-logo">
+                  <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="gray">
+                  <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="color">
+                </a>
+      
+                <a href="#" class="partner-logo">
+                  <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="gray">
+                  <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="color">
+                </a>
+              </div>
+      
+              <!-- Repeat the same group to create continuous scrolling -->
+              <div class="partner-slide-group">
+                <a href="#" class="partner-logo">
+                  <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="gray">
+                  <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="color">
+                </a>
+      
+                <a href="#" class="partner-logo">
+                  <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="gray">
+                  <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="color">
+                </a>
+      
+                <a href="#" class="partner-logo">
+                  <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="gray">
+                  <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="color">
+                </a>
+      
+                <a href="#" class="partner-logo">
+                  <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="gray">
+                  <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization" class="color">
+                </a>
+              </div>
+      
+            </div>
+          </div>
         </div>
       </section>
+      
 
 
 
@@ -534,61 +574,53 @@
               <ul class="event-list">
                 <!-- Event Item 1 -->
                 <li>
-                  <div class="event-card">
-                    <time class="card-time" datetime="01-05">
+                  <div class="event-card" style="min-height: 220px; display: flex; flex-direction: row; align-items: center; max-width: 800px;">
+                    <time class="card-time" datetime="01-05" style="margin-right: 15px;">
                       <span class="month">Nov</span>
                       <span class="date">03</span>
                     </time>
-                    <div class="wrapper">
+                    <div class="wrapper" style="flex-grow: 1; padding: 10px;">
                       <div class="card-content">
                         <h1 class="card-subtitle">Pendaftaran</h1>
-                        <h3 class="card-title">2 November - 12 December 202</h3>
-                     
+                        <h3 class="card-title">2 November - 12 December 2024</h3>
                       </div>
-                      
                     </div>
                   </div>
                 </li>
-                
-                 <!-- Event Item 2 -->
-                 <li>
-                  <div class="event-card">
-                    <time class="card-time" datetime="09-14">
+      
+                <!-- Event Item 2 -->
+                <li>
+                  <div class="event-card" style="min-height: 220px; display: flex; flex-direction: row; align-items: center; max-width: 800px;">
+                    <time class="card-time" datetime="09-14" style="margin-right: 15px;">
                       <span class="month">Dec</span>
                       <span class="date">09</span>
                     </time>
-                    <div class="wrapper">
+                    <div class="wrapper" style="flex-grow: 1; padding: 10px;">
                       <div class="card-content">
                         <h1 class="card-subtitle">Pengambilan Racepack</h1>
                         <h3 class="card-title">9 - 14 December 2024</h3>
                         <p class="card-text">LMI Surabaya, Gedung Sehati, Jl. Barata Jaya XXII No.20, Baratajaya, Kec. Gubeng, Surabaya.</p>
-                     
                       </div>
-                      
                     </div>
                   </div>
                 </li>
-                
+      
                 <!-- Event Item 3 -->
                 <li>
-                  <div class="event-card">
-                    <time class="card-time" datetime="09-14">
+                  <div class="event-card" style="min-height: 220px; display: flex; flex-direction: row; align-items: center; max-width: 800px;">
+                    <time class="card-time" datetime="09-14" style="margin-right: 15px;">
                       <span class="month">Dec</span>
                       <span class="date">15</span>
                     </time>
-                    <div class="wrapper">
+                    <div class="wrapper" style="flex-grow: 1; padding: 10px;">
                       <div class="card-content">
                         <h1 class="card-subtitle">Pelaksanaan</h1>
                         <h3 class="card-title">15 December 2024</h3>
                         <p class="card-text">Start & Finish : Balai Pemuda Surabaya, Jl. Gubernur Suryo No.15, Embong Kaliasin, Kec. Genteng, Surabaya.</p>
-                     
                       </div>
-                      
                     </div>
                   </div>
                 </li>
-                
-                
               </ul>
             </div>
           </div>
@@ -607,79 +639,67 @@
               <ul class="event-list">
                 <!-- Event Item 1 -->
                 <li>
-                  <div class="event-card">
-                    <time class="card-time" datetime="02-23">
+                  <div class="event-card" style="min-height: 220px; display: flex; flex-direction: row; align-items: center; max-width: 800px;">
+                    <time class="card-time" datetime="02-23" style="margin-right: 15px;">
                       <span class="month">Nov</span>
                       <span class="date">2</span>
                     </time>
-                    <div class="wrapper">
+                    <div class="wrapper" style="flex-grow: 1; padding: 10px;">
                       <div class="card-content">
                         <p class="card-subtitle">Pendaftaran</p>
                         <h3 class="card-title">2 November - 2 December 2024</h3>
-                        
                       </div>
-                     
                     </div>
                   </div>
                 </li>
-                
-                 <!-- Event Item 2 -->
+      
+                <!-- Event Item 2 -->
                 <li>
-                  <div class="event-card">
-                    <time class="card-time" datetime="02-23">
+                  <div class="event-card" style="min-height: 220px; display: flex; flex-direction: row; align-items: center; max-width: 800px;">
+                    <time class="card-time" datetime="02-23" style="margin-right: 15px;">
                       <span class="month">Nov</span>
                       <span class="date">25</span>
                     </time>
-                    <div class="wrapper">
+                    <div class="wrapper" style="flex-grow: 1; padding: 10px;">
                       <div class="card-content">
                         <p class="card-subtitle">Pengiriman Racepack</p>
                         <h3 class="card-title">25 November - 5 December 2024</h3>
-                        
                       </div>
-                     
                     </div>
                   </div>
                 </li>
-                
+      
                 <!-- Event Item 3 -->
                 <li>
-                  <div class="event-card">
-                    <time class="card-time" datetime="02-23">
+                  <div class="event-card" style="min-height: 220px; display: flex; flex-direction: row; align-items: center; max-width: 800px;">
+                    <time class="card-time" datetime="02-23" style="margin-right: 15px;">
                       <span class="month">Dec</span>
                       <span class="date">1</span>
                     </time>
-                    <div class="wrapper">
+                    <div class="wrapper" style="flex-grow: 1; padding: 10px;">
                       <div class="card-content">
                         <p class="card-subtitle">Laporan Virtual Running</p>
                         <h3 class="card-title">1 Desember - 14 Desember 2024</h3>
-                        
                       </div>
-                     
                     </div>
                   </div>
                 </li>
-
-                
+      
                 <!-- Event Item 4 -->
                 <li>
-                  <div class="event-card">
-                    <time class="card-time" datetime="02-23">
+                  <div class="event-card" style="min-height: 220px; display: flex; flex-direction: row; align-items: center; max-width: 800px;">
+                    <time class="card-time" datetime="02-23" style="margin-right: 15px;">
                       <span class="month">Dec</span>
                       <span class="date">15</span>
                     </time>
-                    <div class="wrapper">
+                    <div class="wrapper" style="flex-grow: 1; padding: 10px;">
                       <div class="card-content">
                         <p class="card-subtitle">Pengumuman Doorprize</p>
                         <h3 class="card-title">15 Desember 2024</h3>
-                        
                       </div>
-                     
                     </div>
                   </div>
                 </li>
-                
-                
-                
               </ul>
             </div>
           </div>
@@ -690,22 +710,13 @@
         <button class="slider-btn next-btn" onclick="slideTimeline(1)">&#10095;</button>
       </section>
       
-      <style>
-        .event-list {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
       
-        .event-card {
-          width: 100%;
-          max-width: 500px; /* Optional: limits the width for larger screens */
-          margin-bottom: 20px;
-        }
-      </style>
+      
       
 
-
+      <!--  
+      InstaPost
+      -->
       <section class="insta-post">
 
         <ul class="insta-post-list">
@@ -803,6 +814,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
   <script>
     let currentSlideIndex = 0;
@@ -817,7 +829,38 @@
       // Apply the sliding effect by adjusting transform property
       document.querySelector(".slider-container").style.transform = `translateX(-${currentSlideIndex * 100}%)`;
     }
+
+    function showTabContent(tabId) {
+    document.querySelectorAll('.tab-content').forEach(content => {
+      content.style.display = 'none';
+      content.classList.remove('active');
+    });
+    document.getElementById(tabId).style.display = 'block';
+    document.getElementById(tabId).classList.add('active');
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.querySelector(`button[onclick="showTabContent('${tabId}')"]`).classList.add('active');
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    let partnerLogos = document.querySelectorAll('.partner-slider > .partner-slide-group');
+
+    anime({
+      targets: partnerLogos,
+      translateX: '-100%',
+      duration: 12000,
+      easing: 'linear',
+      loop: true
+    });
+  });
   </script>
 </body>
 
 </html>
+
+
+
+
+
