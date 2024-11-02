@@ -619,6 +619,19 @@ body {
   margin-block: 10px;
 }
 
+.service-card:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+}
+
+.card-icon {
+  font-size: 3rem; /* Large icon size */
+}
+
+.service-card:hover .btn-link {
+  color: #006400; /* Darker color on hover */
+}
+
 .service-card .card-text { font-family: var(--ff-inter); }
 
 .btn-link {
@@ -777,6 +790,24 @@ body {
   gap: 50px;
 }
 
+.partner-slider {
+  display: flex;
+  gap: 20px;
+}
+
+
+.partner-slide-group {
+  display: flex;
+  gap: 20px;
+}
+
+
+.partner-logo {
+  flex-shrink: 0;
+}
+
+
+
 .partner-logo .color,
 .partner-logo:is(:hover, :focus) .gray { display: none; }
 
@@ -805,6 +836,7 @@ body {
   gap: 30px;
   margin-block-end: 70px;
 }
+
 
 .event-card {
   border: 1px solid var(--platinum);
@@ -1065,7 +1097,28 @@ body {
 
 
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  .about-content {
+    margin-top: 20px;
+  }
+  .tab-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .tab-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .tab-item .item-icon {
+    margin-right: 10px;
+  }
 
+
+}
 
 /**
  * responsive for larger than 768px screen
@@ -1467,6 +1520,7 @@ body {
   }
 
 }
+
 
 /* General Styling */
 .event-slider {
